@@ -84,13 +84,14 @@ extension WebAPI{
         case videosList
     }
     
-    public func videoList(params: [String:Any] = [:], type : AuthRequest, specialPUTParams: String? = nil, specialGETParams: String? = nil) -> URLRequest? {
+    public func videos(params: [String:Any] = [:], type : AuthRequest, specialPUTParams: String? = nil, specialGETParams: String? = nil) -> URLRequest? {
         
         var requestURL : String?
         var httpMethod : HttpMethod = .post
         
         switch type {
         case .videosList:
+            httpMethod = .get
             requestURL = RequestUrl.videos.url
         }
         
