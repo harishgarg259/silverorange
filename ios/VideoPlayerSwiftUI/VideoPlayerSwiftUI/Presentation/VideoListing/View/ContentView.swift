@@ -67,6 +67,11 @@ struct ContentView: View {
                     self.viewModel.loadVideoDetail(action: newTask)
                 }
             }
+            
+            /*
+             Trigger when API fails.
+             */
+            .errorAlert(error: $viewModel.error)
         }
     }
 }

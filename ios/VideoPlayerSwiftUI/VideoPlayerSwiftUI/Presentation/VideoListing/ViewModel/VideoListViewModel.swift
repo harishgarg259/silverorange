@@ -13,7 +13,8 @@ class VideoListViewModel: ObservableObject {
     @Published var videosDetail: VideoListModel?
     private var videosList: [VideoListModel] = []
     private var currentIndex: Int = 0
-    
+    @Published var error: WebError?
+
     
     // MARK: - API Functions
     /*
@@ -33,7 +34,7 @@ class VideoListViewModel: ObservableObject {
                 
             case .failure(let error):
                 debugPrint(error.description)
-                
+                self.error = error
             }
             
         }
