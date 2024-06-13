@@ -53,9 +53,15 @@ struct ContentView: View {
             }
             .navigationTitle("title".localized)
             .navigationBarTitleDisplayMode(.inline)
+            .toolbarBackground(.visible, for: .navigationBar)
             .onAppear {
+                //Video list api call when view has been loaded
                 self.viewModel.videoList()
             }
+            
+            /*
+             Callback function trigger when user clicked on previous and next video button.
+             */
             .onReceive(NotificationCenter.default.publisher(for: Notification.Name.taskAddedNotification)) { object in
                 if let newTask = object.object as? VideoAction{
                     self.viewModel.loadVideoDetail(action: newTask)

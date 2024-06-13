@@ -42,12 +42,6 @@ class RestManager<T: Codable> {
                     
                     /*RESPONSE*/
                     /***********************************************/
-                    if let responseData = data
-                    {
-                        let str = String(decoding: responseData, as: UTF8.self)
-                        print(str)
-                    }
-                    
                     switch response.statusCode {
                     case (200..<300):
                         guard let model = Response<T>().parceModel(data: data) else {

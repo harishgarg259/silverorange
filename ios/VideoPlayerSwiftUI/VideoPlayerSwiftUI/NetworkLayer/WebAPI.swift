@@ -79,12 +79,12 @@ class WebAPI {
 //MARK: - Videos List Request
 extension WebAPI{
     
-    enum AuthRequest
+    enum APIRequest
     {
         case videosList
     }
     
-    public func videos(params: [String:Any] = [:], type : AuthRequest, specialPUTParams: String? = nil, specialGETParams: String? = nil) -> URLRequest? {
+    public func videos(params: [String:Any] = [:], type : APIRequest, specialPUTParams: String? = nil, specialGETParams: String? = nil) -> URLRequest? {
         
         var requestURL : String?
         var httpMethod : HttpMethod = .post
