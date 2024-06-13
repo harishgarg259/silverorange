@@ -10,3 +10,7 @@ import Foundation
 struct Utility {
     
 }
+
+extension Notification.Name {
+    static let taskAddedNotification = Notification.Name("videoAction")
+}

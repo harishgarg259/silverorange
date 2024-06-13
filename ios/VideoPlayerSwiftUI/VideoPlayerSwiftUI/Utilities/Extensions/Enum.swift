@@ -10,3 +10,10 @@ import Foundation
 public enum SortingType: String{
     case Date
 }
+
+
+public enum VideoAction{
+    case Next
+    case Previous
+    case None
+}

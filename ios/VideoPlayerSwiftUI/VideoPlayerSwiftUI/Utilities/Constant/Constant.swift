@@ -8,6 +8,7 @@
 import Foundation
 struct AppConstants {
     
+    static let seekFactor: TimeInterval = 10
     static let limitPerPage: String = "20"
 
 }

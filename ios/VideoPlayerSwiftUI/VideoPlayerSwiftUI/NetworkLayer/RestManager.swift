@@ -60,7 +60,7 @@ class RestManager<T: Codable> {
                             completion(.failure(.other((error?.localizedDescription) ?? "Internal server error")))
                             return
                         }
-                        let message = json["error_description"] as? String ?? WebError.parse.description
+                        let message = json["error"] as? String ?? WebError.parse.description
                         completion(.failure(.other(message)))
                         return
                     default:

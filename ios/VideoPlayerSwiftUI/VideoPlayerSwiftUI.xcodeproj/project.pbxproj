@@ -19,6 +19,18 @@
 		3869224E2C1A4B2200779A2A /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3869224D2C1A4B2200779A2A /* Enum.swift */; };
 		386922512C1A59AD00779A2A /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386922502C1A59AD00779A2A /* Array.swift */; };
 		386922532C1A616A00779A2A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386922522C1A616A00779A2A /* Utility.swift */; };
+		386922612C1A77EE00779A2A /* View+readFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386922562C1A77EE00779A2A /* View+readFrame.swift */; };
+		386922622C1A77EE00779A2A /* View+wrapInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386922572C1A77EE00779A2A /* View+wrapInButton.swift */; };
+		386922632C1A77EE00779A2A /* Date+mediaTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386922582C1A77EE00779A2A /* Date+mediaTime.swift */; };
+		386922642C1A77EE00779A2A /* MediaPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386922592C1A77EE00779A2A /* MediaPlayer.swift */; };
+		386922652C1A77EE00779A2A /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3869225A2C1A77EE00779A2A /* MediaPlayerViewController.swift */; };
+		386922662C1A77EE00779A2A /* MediaPlayerControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3869225B2C1A77EE00779A2A /* MediaPlayerControlsView.swift */; };
+		386922672C1A77EE00779A2A /* SettingsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3869225C2C1A77EE00779A2A /* SettingsMenu.swift */; };
+		386922682C1A77EE00779A2A /* SettingsPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3869225D2C1A77EE00779A2A /* SettingsPreference.swift */; };
+		386922692C1A77EE00779A2A /* MediaPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3869225E2C1A77EE00779A2A /* MediaPlayerView.swift */; };
+		3869226A2C1A77EE00779A2A /* AVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3869225F2C1A77EE00779A2A /* AVPlayerView.swift */; };
+		3869226B2C1A77EE00779A2A /* MediaPlayerTappableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386922602C1A77EE00779A2A /* MediaPlayerTappableView.swift */; };
+		386922702C1AE25C00779A2A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3869226F2C1AE25C00779A2A /* String.swift */; };
 		3AF67A5C25A64DBD00D360A7 /* VideoPlayerSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF67A5B25A64DBD00D360A7 /* VideoPlayerSwiftUIApp.swift */; };
 		3AF67A5E25A64DBD00D360A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF67A5D25A64DBD00D360A7 /* ContentView.swift */; };
 		3AF67A6025A64DBF00D360A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF67A5F25A64DBF00D360A7 /* Assets.xcassets */; };
@@ -58,6 +70,18 @@
 		3869224D2C1A4B2200779A2A /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		386922502C1A59AD00779A2A /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		386922522C1A616A00779A2A /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		386922562C1A77EE00779A2A /* View+readFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+readFrame.swift"; sourceTree = "<group>"; };
+		386922572C1A77EE00779A2A /* View+wrapInButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+wrapInButton.swift"; sourceTree = "<group>"; };
+		386922582C1A77EE00779A2A /* Date+mediaTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+mediaTime.swift"; sourceTree = "<group>"; };
+		386922592C1A77EE00779A2A /* MediaPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayer.swift; sourceTree = "<group>"; };
+		3869225A2C1A77EE00779A2A /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
+		3869225B2C1A77EE00779A2A /* MediaPlayerControlsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerControlsView.swift; sourceTree = "<group>"; };
+		3869225C2C1A77EE00779A2A /* SettingsMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsMenu.swift; sourceTree = "<group>"; };
+		3869225D2C1A77EE00779A2A /* SettingsPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPreference.swift; sourceTree = "<group>"; };
+		3869225E2C1A77EE00779A2A /* MediaPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerView.swift; sourceTree = "<group>"; };
+		3869225F2C1A77EE00779A2A /* AVPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
+		386922602C1A77EE00779A2A /* MediaPlayerTappableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerTappableView.swift; sourceTree = "<group>"; };
+		3869226F2C1AE25C00779A2A /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		3AF67A5825A64DBD00D360A7 /* VideoPlayerSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoPlayerSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF67A5B25A64DBD00D360A7 /* VideoPlayerSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerSwiftUIApp.swift; sourceTree = "<group>"; };
 		3AF67A5D25A64DBD00D360A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +145,7 @@
 		3869222F2C1A31E000779A2A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				386922542C1A77C400779A2A /* VideoPlayer */,
 				3869224F2C1A4B2F00779A2A /* Extensions */,
 				386922332C1A327300779A2A /* Localization */,
 				386922302C1A320C00779A2A /* Constant */,
@@ -189,11 +214,30 @@
 		3869224F2C1A4B2F00779A2A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				386922562C1A77EE00779A2A /* View+readFrame.swift */,
+				386922572C1A77EE00779A2A /* View+wrapInButton.swift */,
+				386922582C1A77EE00779A2A /* Date+mediaTime.swift */,
 				3869224D2C1A4B2200779A2A /* Enum.swift */,
 				386922502C1A59AD00779A2A /* Array.swift */,
 				386922522C1A616A00779A2A /* Utility.swift */,
+				3869226F2C1AE25C00779A2A /* String.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		386922542C1A77C400779A2A /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				3869225F2C1A77EE00779A2A /* AVPlayerView.swift */,
+				386922592C1A77EE00779A2A /* MediaPlayer.swift */,
+				3869225B2C1A77EE00779A2A /* MediaPlayerControlsView.swift */,
+				386922602C1A77EE00779A2A /* MediaPlayerTappableView.swift */,
+				3869225E2C1A77EE00779A2A /* MediaPlayerView.swift */,
+				3869225A2C1A77EE00779A2A /* MediaPlayerViewController.swift */,
+				3869225C2C1A77EE00779A2A /* SettingsMenu.swift */,
+				3869225D2C1A77EE00779A2A /* SettingsPreference.swift */,
+			);
+			path = VideoPlayer;
 			sourceTree = "<group>";
 		};
 		3AF67A4F25A64DBD00D360A7 = {
@@ -388,14 +432,26 @@
 			files = (
 				3AF67A5E25A64DBD00D360A7 /* ContentView.swift in Sources */,
 				3869223C2C1A32C300779A2A /* WebError.swift in Sources */,
+				386922642C1A77EE00779A2A /* MediaPlayer.swift in Sources */,
 				3869223B2C1A32C300779A2A /* WebAPI.swift in Sources */,
+				386922662C1A77EE00779A2A /* MediaPlayerControlsView.swift in Sources */,
+				3869226A2C1A77EE00779A2A /* AVPlayerView.swift in Sources */,
 				3869224C2C1A386F00779A2A /* VideoListModel.swift in Sources */,
 				386922532C1A616A00779A2A /* Utility.swift in Sources */,
 				3869224E2C1A4B2200779A2A /* Enum.swift in Sources */,
+				3869226B2C1A77EE00779A2A /* MediaPlayerTappableView.swift in Sources */,
+				386922692C1A77EE00779A2A /* MediaPlayerView.swift in Sources */,
 				3869223A2C1A32C300779A2A /* RestManager.swift in Sources */,
+				386922632C1A77EE00779A2A /* Date+mediaTime.swift in Sources */,
+				386922622C1A77EE00779A2A /* View+wrapInButton.swift in Sources */,
+				386922672C1A77EE00779A2A /* SettingsMenu.swift in Sources */,
+				386922652C1A77EE00779A2A /* MediaPlayerViewController.swift in Sources */,
 				3AF67A5C25A64DBD00D360A7 /* VideoPlayerSwiftUIApp.swift in Sources */,
+				386922702C1AE25C00779A2A /* String.swift in Sources */,
 				3869224A2C1A381100779A2A /* VideoListViewModel.swift in Sources */,
 				386922392C1A32C300779A2A /* Reachability.swift in Sources */,
+				386922612C1A77EE00779A2A /* View+readFrame.swift in Sources */,
+				386922682C1A77EE00779A2A /* SettingsPreference.swift in Sources */,
 				386922512C1A59AD00779A2A /* Array.swift in Sources */,
 				386922322C1A322200779A2A /* Constant.swift in Sources */,
 				3869223D2C1A32C300779A2A /* RequestUrl.swift in Sources */,
