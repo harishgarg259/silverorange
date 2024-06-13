@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
     
@@ -16,18 +17,26 @@ struct ContentView: View {
     var body: some View {
         
         ScrollView {
-            VStack(alignment: .leading, spacing: 20) {
+            VStack(alignment: .leading, spacing: 16) {
                 
-                // Multiple images in grid view with pagination view
-//                ImageGridView(images: [])
-//                    .frame(height: 200) // Set your preferred height
+                // Video Player
+                if let url = viewModel.videosDetail?.fullURL, !url.isEmpty{
+                    
+                }
                 
-                // Product name and price detail after discount
+                // Video name
                 Text(viewModel.videosDetail?.title ?? "Title")
                     .font(.title)
                 
-                // Product description with multiple headings and details
-                VStack(alignment: .leading, spacing: 12) {
+                // Author Details
+                Text("Author: \(viewModel.videosDetail?.author?.name ?? "")")
+                    .font(Font.system(size: 14))
+                    .italic()
+                    .fontWeight(.medium)
+                    .drawingGroup()
+                
+                // Video description with details
+                VStack(alignment: .leading, spacing: 10) {
                     Text("Description:")
                         .font(.headline)
                     Text(viewModel.videosDetail?.description ?? "")
