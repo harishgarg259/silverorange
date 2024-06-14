@@ -31,7 +31,7 @@ struct MediaPlayerControlsView: View {
 
     @ViewBuilder private func renderButtonBar() -> some View {
         HStack(spacing: Constants.defaultPadding) {
-            renderTimeBar()
+//            renderTimeBar()
 //            renderLoop()
 //            renderButton(control: .settings, size: Constants.accessoryButtonSize)
         }
@@ -193,37 +193,42 @@ extension MediaPlayerControlsView {
         var systemImage: Image {
             switch self {
             case .play:
-                return Image(systemName: Constants.playIcon)
+                return setupImage(name: Constants.playIcon)
             case .pause:
-                return Image(systemName: Constants.pauseIcon)
+                return setupImage(name: Constants.pauseIcon)
             case .loop:
-                return Image(systemName: Constants.loopIcon)
+                return setupImage(name: Constants.loopIcon)
             case .replay:
                 return Image(systemName: Constants.replayIcon)
             case .rewind:
-                return Image(systemName: Constants.rewindIcon)
+                return setupImage(name: Constants.rewindIcon)
             case .forward:
-                return Image(systemName: Constants.forwardIcon)
+                return setupImage(name: Constants.forwardIcon)
             case .previous:
-                return Image(systemName: Constants.previous)
+                return setupImage(name: Constants.previous)
             case .next:
-                return Image(systemName: Constants.next)
+                return setupImage(name: Constants.next)
             case .settings:
-                return Image(systemName: Constants.settingsIcon)
+                return setupImage(name: Constants.settingsIcon)
             }
+        }
+        
+        func setupImage(name: String) -> Image{
+            Image(name)
+                .renderingMode(.template)
         }
     }
 }
 
 extension MediaPlayerControlsView.Control {
     enum Constants {
-        static let playIcon = "play.fill"
-        static let pauseIcon = "pause.fill"
+        static let playIcon = "play"
+        static let pauseIcon = "pause"
         static let loopIcon = "infinity"
         static let replayIcon = "repeat"
         static let forwardIcon = "goforward"
-        static let previous = "backward.end.fill"
-        static let next = "forward.end.fill"
+        static let previous = "previous"
+        static let next = "next"
         static let rewindIcon = "gobackward"
         static let settingsIcon = "gearshape.fill"
     }

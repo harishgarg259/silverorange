@@ -34,6 +34,16 @@ public class MediaPlayerViewController: UIHostingController<MediaPlayerView> {
     func updateURL(with mediaURL: URL) {
         viewModel.player = .init(url: mediaURL)
         onLoad()
+        
+        //When a new video is launched, this function will pause before playing the video.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+            if self.viewModel.playerState == .playing{
+                self.viewModel.playerState = .paused
+                self.viewModel.areControlsVisible = true
+            }
+        })
+        
+        
     }
     
     private func setupActions() {

@@ -25,6 +25,16 @@ public struct MediaPlayerView: View {
         .readFrame { size in
             screenWidth = size.width
         }
+        /*
+         The callback function is triggered when the app enters the foreground, ensuring that the controls are visible at that time.
+         */
+        .onReceive(NotificationCenter.default.publisher(
+            for: UIApplication.willEnterForegroundNotification)) { _ in
+                DispatchQueue.main.async {
+                    self.viewModel.playerState = .paused
+                    self.viewModel.areControlsVisible = true
+                }
+        }
     }
     
     @ViewBuilder private func renderActivePlayerViews() -> some View {
